@@ -1,0 +1,10 @@
+<h1><%= @article.title %></h1>
+<pre>
+  Updated: <%= @article.updated_at.strftime('%d.%m.%Y %H:%M') %><br />
+  Published: <%= @article.published ? 'yes' : 'no' %><br />
+</pre>
+<p>
+  <%= @article.body %>
+</p>
+
+<a href="/">Back to articles list</a>
